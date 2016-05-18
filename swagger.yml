@@ -1,0 +1,18 @@
+swagger: '2.0'
+info:
+    title: Fun API
+    version: '0'
+consumes:
+    - application/json
+produces:
+    - application/json
+paths:
+    /test:
+        get:
+            operationId: endpoints.test1.test
+            summary: Root entry point.
+            responses:
+                200:
+                    description: Return test things.
+                    schema:
+                        type: array
